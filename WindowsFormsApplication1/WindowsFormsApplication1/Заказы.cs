@@ -84,5 +84,10 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Заполните все поля", "Ощибка");
             }            
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Оборудование frm = new Оборудование(); frm.Show();
+        }
     }
 }

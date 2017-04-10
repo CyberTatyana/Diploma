@@ -57,5 +57,34 @@ namespace WindowsFormsApplication1
             placeHolderTextBox6.Visible = !placeHolderTextBox6.Visible;
             label7.Visible = !label7.Visible;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            клиентыTableAdapter.InsertQuery(placeHolderTextBox2.Text, placeHolderTextBox3.Text, placeHolderTextBox4.Text, placeHolderTextBox5.Text, placeHolderTextBox6.Text, checkBox1.Checked);
+            клиентыTableAdapter.Update(serviceDataSet.Клиенты);
+           клиентыTableAdapter.Fill(serviceDataSet.Клиенты);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            клиентыBindingSource.RemoveCurrent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = клиентыDataGridView.CurrentRow;
+            string value = row.Cells[0].Value.ToString() ?? string.Empty;
+            MessageBox.Show(value);
+            клиентыTableAdapter.UpdateQuery(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, checkBox1.Checked, value);
+            клиентыTableAdapter.Update(serviceDataSet.Клиенты);
+            клиентыTableAdapter.Fill(serviceDataSet.Клиенты);
+        }
+
+       
     }
 }

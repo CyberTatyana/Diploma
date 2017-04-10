@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="ServiceDataSet.cs">
       <DependentUpon>ServiceDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Заказы.cs">
       <SubType>Form</SubType>

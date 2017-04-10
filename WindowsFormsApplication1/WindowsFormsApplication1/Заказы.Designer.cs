@@ -171,9 +171,8 @@
             this.заказыBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.заказыBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.заказыBindingNavigator.Name = "заказыBindingNavigator";
-            this.заказыBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.заказыBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.заказыBindingNavigator.Size = new System.Drawing.Size(1448, 31);
+            this.заказыBindingNavigator.Size = new System.Drawing.Size(856, 31);
             this.заказыBindingNavigator.TabIndex = 0;
             this.заказыBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -189,7 +188,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(65, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 28);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -230,7 +229,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(73, 31);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -288,10 +287,9 @@
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11});
             this.заказыDataGridView.DataSource = this.заказыBindingSource;
-            this.заказыDataGridView.Location = new System.Drawing.Point(0, 65);
-            this.заказыDataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.заказыDataGridView.Location = new System.Drawing.Point(0, 42);
             this.заказыDataGridView.Name = "заказыDataGridView";
-            this.заказыDataGridView.Size = new System.Drawing.Size(1437, 338);
+            this.заказыDataGridView.Size = new System.Drawing.Size(958, 220);
             this.заказыDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -373,9 +371,10 @@
             this.comboBox1.DataSource = this.клиентыBindingSource;
             this.comboBox1.DisplayMember = "Наименование";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(13, 421);
+            this.comboBox1.Location = new System.Drawing.Point(9, 274);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(184, 28);
+            this.comboBox1.Size = new System.Drawing.Size(124, 21);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.ValueMember = "Наименование";
             // 
@@ -386,9 +385,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(229, 421);
+            this.button1.Location = new System.Drawing.Point(153, 274);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 28);
+            this.button1.Size = new System.Drawing.Size(123, 18);
             this.button1.TabIndex = 3;
             this.button1.Text = "Открыть заказы";
             this.button1.UseVisualStyleBackColor = true;
@@ -396,18 +396,20 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(442, 421);
+            this.button2.Location = new System.Drawing.Point(295, 274);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 28);
+            this.button2.Size = new System.Drawing.Size(110, 18);
             this.button2.TabIndex = 4;
             this.button2.Text = "Добавить заказ";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(637, 421);
+            this.button3.Location = new System.Drawing.Point(425, 274);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 28);
+            this.button3.Size = new System.Drawing.Size(77, 18);
             this.button3.TabIndex = 5;
             this.button3.Text = "Удалить";
             this.button3.UseVisualStyleBackColor = true;
@@ -418,16 +420,18 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(213, 486);
+            this.dateTimePicker1.Location = new System.Drawing.Point(142, 316);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(135, 20);
             this.dateTimePicker1.TabIndex = 6;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(213, 531);
+            this.dateTimePicker2.Location = new System.Drawing.Point(142, 345);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker2.Size = new System.Drawing.Size(135, 20);
             this.dateTimePicker2.TabIndex = 7;
             // 
             // comboBox2
@@ -435,9 +439,10 @@
             this.comboBox2.DataSource = this.оборудованиеBindingSource;
             this.comboBox2.DisplayMember = "Название_оборудования";
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(213, 582);
+            this.comboBox2.Location = new System.Drawing.Point(142, 378);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 28);
+            this.comboBox2.Size = new System.Drawing.Size(135, 21);
             this.comboBox2.TabIndex = 8;
             this.comboBox2.ValueMember = "Название_оборудования";
             // 
@@ -451,9 +456,10 @@
             this.comboBox3.DataSource = this.ремонтBindingSource;
             this.comboBox3.DisplayMember = "Название";
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(213, 633);
+            this.comboBox3.Location = new System.Drawing.Point(142, 411);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(200, 28);
+            this.comboBox3.Size = new System.Drawing.Size(135, 21);
             this.comboBox3.TabIndex = 9;
             this.comboBox3.ValueMember = "Название";
             // 
@@ -467,9 +473,10 @@
             this.comboBox4.DataSource = this.типоборудованияBindingSource;
             this.comboBox4.DisplayMember = "Тип_оборудования";
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(213, 682);
+            this.comboBox4.Location = new System.Drawing.Point(142, 443);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(200, 28);
+            this.comboBox4.Size = new System.Drawing.Size(135, 21);
             this.comboBox4.TabIndex = 10;
             this.comboBox4.ValueMember = "Тип_оборудования";
             // 
@@ -483,9 +490,10 @@
             this.comboBox5.DataSource = this.сотрудникиBindingSource;
             this.comboBox5.DisplayMember = "ФИО";
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(213, 727);
+            this.comboBox5.Location = new System.Drawing.Point(142, 473);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(200, 28);
+            this.comboBox5.Size = new System.Drawing.Size(135, 21);
             this.comboBox5.TabIndex = 11;
             this.comboBox5.ValueMember = "ФИО";
             // 
@@ -496,23 +504,26 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(213, 778);
+            this.textBox1.Location = new System.Drawing.Point(142, 506);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 26);
+            this.textBox1.Size = new System.Drawing.Size(135, 20);
             this.textBox1.TabIndex = 12;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(213, 832);
+            this.textBox2.Location = new System.Drawing.Point(142, 541);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 26);
+            this.textBox2.Size = new System.Drawing.Size(135, 20);
             this.textBox2.TabIndex = 13;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(213, 889);
+            this.textBox3.Location = new System.Drawing.Point(142, 578);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 26);
+            this.textBox3.Size = new System.Drawing.Size(135, 20);
             this.textBox3.TabIndex = 14;
             // 
             // оборудованиеTableAdapter
@@ -533,9 +544,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(213, 926);
+            this.button4.Location = new System.Drawing.Point(142, 602);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 27);
+            this.button4.Size = new System.Drawing.Size(133, 18);
             this.button4.TabIndex = 15;
             this.button4.Text = "Добавить";
             this.button4.UseVisualStyleBackColor = true;
@@ -544,81 +556,91 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 486);
+            this.label1.Location = new System.Drawing.Point(9, 316);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 20);
+            this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 16;
             this.label1.Text = "Дата приема";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 531);
+            this.label2.Location = new System.Drawing.Point(9, 345);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 20);
+            this.label2.Size = new System.Drawing.Size(121, 13);
             this.label2.TabIndex = 17;
             this.label2.Text = "Дата окончания работ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 580);
+            this.label3.Location = new System.Drawing.Point(9, 377);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 20);
+            this.label3.Size = new System.Drawing.Size(80, 13);
             this.label3.TabIndex = 18;
             this.label3.Text = "Оборудование";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 625);
+            this.label4.Location = new System.Drawing.Point(9, 406);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 20);
+            this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 19;
             this.label4.Text = "Ремонт";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 674);
+            this.label5.Location = new System.Drawing.Point(9, 438);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(148, 20);
+            this.label5.Size = new System.Drawing.Size(100, 13);
             this.label5.TabIndex = 20;
             this.label5.Text = "Тип оборудования";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 725);
+            this.label6.Location = new System.Drawing.Point(9, 471);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 20);
+            this.label6.Size = new System.Drawing.Size(60, 13);
             this.label6.TabIndex = 21;
             this.label6.Text = "Сотрудник";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 775);
+            this.label7.Location = new System.Drawing.Point(9, 504);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 20);
+            this.label7.Size = new System.Drawing.Size(33, 13);
             this.label7.TabIndex = 22;
             this.label7.Text = "Цена";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 832);
+            this.label8.Location = new System.Drawing.Point(6, 541);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(100, 20);
+            this.label8.Size = new System.Drawing.Size(66, 13);
             this.label8.TabIndex = 23;
             this.label8.Text = "Количество";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 895);
+            this.label9.Location = new System.Drawing.Point(9, 582);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 20);
+            this.label9.Size = new System.Drawing.Size(41, 13);
             this.label9.TabIndex = 24;
             this.label9.Text = "Сумма";
             // 
@@ -628,9 +650,10 @@
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.comboBox6);
-            this.panel1.Location = new System.Drawing.Point(484, 508);
+            this.panel1.Location = new System.Drawing.Point(323, 330);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(724, 389);
+            this.panel1.Size = new System.Drawing.Size(483, 253);
             this.panel1.TabIndex = 25;
             this.panel1.Visible = false;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
@@ -644,10 +667,11 @@
             this.dataGridViewTextBoxColumn13,
             this.dataGridViewTextBoxColumn14});
             this.ремонт_оборудованияDataGridView.DataSource = this.ремонт_оборудованияBindingSource;
-            this.ремонт_оборудованияDataGridView.Location = new System.Drawing.Point(254, 14);
+            this.ремонт_оборудованияDataGridView.Location = new System.Drawing.Point(169, 9);
+            this.ремонт_оборудованияDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ремонт_оборудованияDataGridView.Name = "ремонт_оборудованияDataGridView";
             this.ремонт_оборудованияDataGridView.RowTemplate.Height = 28;
-            this.ремонт_оборудованияDataGridView.Size = new System.Drawing.Size(456, 220);
+            this.ремонт_оборудованияDataGridView.Size = new System.Drawing.Size(304, 143);
             this.ремонт_оборудованияDataGridView.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn12
@@ -676,9 +700,10 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(592, 331);
+            this.button8.Location = new System.Drawing.Point(395, 215);
+            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(109, 38);
+            this.button8.Size = new System.Drawing.Size(73, 25);
             this.button8.TabIndex = 2;
             this.button8.Text = "Закрыть";
             this.button8.UseVisualStyleBackColor = true;
@@ -686,9 +711,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(27, 61);
+            this.button5.Location = new System.Drawing.Point(18, 40);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 39);
+            this.button5.Size = new System.Drawing.Size(133, 25);
             this.button5.TabIndex = 1;
             this.button5.Text = "Выбрать";
             this.button5.UseVisualStyleBackColor = true;
@@ -698,28 +724,27 @@
             this.comboBox6.DataSource = this.оборудованиеBindingSource;
             this.comboBox6.DisplayMember = "Название_оборудования";
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(27, 14);
+            this.comboBox6.Location = new System.Drawing.Point(18, 9);
+            this.comboBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(200, 28);
+            this.comboBox6.Size = new System.Drawing.Size(135, 21);
             this.comboBox6.TabIndex = 0;
             this.comboBox6.ValueMember = "Название_оборудования";
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(1234, 812);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button6.Location = new System.Drawing.Point(823, 528);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(112, 65);
+            this.button6.Size = new System.Drawing.Size(75, 42);
             this.button6.TabIndex = 27;
             this.button6.Text = "Выход";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(1234, 725);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button7.Location = new System.Drawing.Point(823, 471);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(112, 65);
+            this.button7.Size = new System.Drawing.Size(75, 42);
             this.button7.TabIndex = 26;
             this.button7.Text = "Справка";
             this.button7.UseVisualStyleBackColor = true;
@@ -731,9 +756,9 @@
             // 
             // Заказы
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1448, 1004);
+            this.ClientSize = new System.Drawing.Size(856, 653);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.panel1);
@@ -762,7 +787,6 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.заказыDataGridView);
             this.Controls.Add(this.заказыBindingNavigator);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Заказы";
             this.Text = "Заказы";
             this.Load += new System.EventHandler(this.Заказы_Load);
