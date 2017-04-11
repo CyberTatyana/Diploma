@@ -36,14 +36,14 @@
             this.оборудованиеTableAdapter = new WindowsFormsApplication1.ServiceDataSetTableAdapters.ОборудованиеTableAdapter();
             this.ремонтTableAdapter = new WindowsFormsApplication1.ServiceDataSetTableAdapters.РемонтTableAdapter();
             this.ремонт_оборудованияDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.оборудованиеBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.ремонтBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.serviceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ремонт_оборудованияBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ремонт_оборудованияDataGridView)).BeginInit();
@@ -99,41 +99,15 @@
             this.ремонт_оборудованияDataGridView.Size = new System.Drawing.Size(346, 148);
             this.ремонт_оборудованияDataGridView.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Оборудование";
-            this.dataGridViewTextBoxColumn1.DataSource = this.оборудованиеBindingSource;
-            this.dataGridViewTextBoxColumn1.DisplayMember = "Название_оборудования";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Оборудование";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // оборудованиеBindingSource
             // 
             this.оборудованиеBindingSource.DataMember = "Оборудование";
             this.оборудованиеBindingSource.DataSource = this.serviceDataSet;
             // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Ремонт";
-            this.dataGridViewTextBoxColumn2.DataSource = this.ремонтBindingSource;
-            this.dataGridViewTextBoxColumn2.DisplayMember = "Название";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Ремонт";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // ремонтBindingSource
             // 
             this.ремонтBindingSource.DataMember = "Ремонт";
             this.ремонтBindingSource.DataSource = this.serviceDataSet;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Цена";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Цена";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // button4
             // 
@@ -164,6 +138,33 @@
             this.button2.Text = "Добавить";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Оборудование";
+            this.dataGridViewTextBoxColumn1.DataSource = this.оборудованиеBindingSource;
+            this.dataGridViewTextBoxColumn1.DisplayMember = "Название_оборудования";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Оборудование";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Ремонт";
+            this.dataGridViewTextBoxColumn2.DataSource = this.ремонтBindingSource;
+            this.dataGridViewTextBoxColumn2.DisplayMember = "Название";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Ремонт";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Цена";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Цена";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // Ремонт_оборудования
             // 
@@ -197,11 +198,11 @@
         private System.Windows.Forms.BindingSource оборудованиеBindingSource;
         private ServiceDataSetTableAdapters.РемонтTableAdapter ремонтTableAdapter;
         private System.Windows.Forms.BindingSource ремонтBindingSource;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

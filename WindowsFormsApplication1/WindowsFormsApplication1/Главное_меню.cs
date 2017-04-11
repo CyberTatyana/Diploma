@@ -39,7 +39,7 @@ namespace WindowsFormsApplication1
 
         private void button8_Click(object sender, EventArgs e)
         {
-           Ремонт frm = new Ремонт(); frm.Show();
+           //Ремонт frm = new Ремонт(); frm.Show();
         }
 
         private void button9_Click(object sender, EventArgs e)

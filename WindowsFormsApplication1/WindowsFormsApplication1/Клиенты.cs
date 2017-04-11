@@ -85,6 +85,28 @@ namespace WindowsFormsApplication1
             клиентыTableAdapter.Fill(serviceDataSet.Клиенты);
         }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.клиентыBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.serviceDataSet);
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            Клиенты frm = new Клиенты();
+            this.Size = new Size(672, 689);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+            Клиенты frm = new Клиенты();
+            this.Size = new Size(672, 689);
+        }
+
        
     }
 }
