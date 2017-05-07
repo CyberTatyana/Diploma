@@ -53,11 +53,16 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
             this.placeHolderTextBox5 = new System.Windows.Forms.PlaceHolderTextBox();
             this.placeHolderTextBox4 = new System.Windows.Forms.PlaceHolderTextBox();
             this.button7 = new System.Windows.Forms.Button();
+            this.Изменить = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.сотрудникиBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.serviceDataSet1 = new WindowsFormsApplication1.ServiceDataSet();
             this.button9 = new System.Windows.Forms.Button();
@@ -71,11 +76,6 @@
             this.placeHolderTextBox7 = new System.Windows.Forms.PlaceHolderTextBox();
             this.button13 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.serviceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.сотрудникиDataGridView)).BeginInit();
@@ -200,16 +200,16 @@
             this.placeHolderTextBox1.ForeColor = System.Drawing.Color.Gray;
             this.placeHolderTextBox1.Location = new System.Drawing.Point(102, 5);
             this.placeHolderTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.placeHolderTextBox1.Mask = "(999) 000-0000";
             this.placeHolderTextBox1.Name = "placeHolderTextBox1";
             this.placeHolderTextBox1.PlaceHolderText = "Введите ФИО";
             this.placeHolderTextBox1.Size = new System.Drawing.Size(214, 26);
             this.placeHolderTextBox1.TabIndex = 15;
-            this.placeHolderTextBox1.Text = "Введите ФИО";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 5);
+            this.label1.Location = new System.Drawing.Point(18, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 20);
@@ -219,7 +219,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 72);
+            this.label2.Location = new System.Drawing.Point(5, 97);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 20);
@@ -241,7 +241,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 125);
+            this.label3.Location = new System.Drawing.Point(20, 160);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 20);
@@ -263,7 +263,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 186);
+            this.label4.Location = new System.Drawing.Point(20, 211);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 40);
@@ -273,7 +273,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 257);
+            this.label5.Location = new System.Drawing.Point(20, 282);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 20);
@@ -304,18 +304,12 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button14);
             this.panel1.Controls.Add(this.placeHolderTextBox5);
             this.panel1.Controls.Add(this.placeHolderTextBox4);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.placeHolderTextBox1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.placeHolderTextBox3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.placeHolderTextBox2);
             this.panel1.Location = new System.Drawing.Point(20, 503);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -323,17 +317,6 @@
             this.panel1.Size = new System.Drawing.Size(399, 392);
             this.panel1.TabIndex = 29;
             this.panel1.Visible = false;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(214, 317);
-            this.button14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(112, 35);
-            this.button14.TabIndex = 29;
-            this.button14.Text = "button14";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // placeHolderTextBox5
             // 
@@ -370,19 +353,71 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // Изменить
+            // 
+            this.Изменить.Location = new System.Drawing.Point(108, 320);
+            this.Изменить.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Изменить.Name = "Изменить";
+            this.Изменить.Size = new System.Drawing.Size(112, 35);
+            this.Изменить.TabIndex = 29;
+            this.Изменить.Text = "button14";
+            this.Изменить.UseVisualStyleBackColor = true;
+            this.Изменить.Click += new System.EventHandler(this.button14_Click);
+            // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.Изменить);
             this.panel2.Controls.Add(this.textBox5);
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(447, 500);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(400, 395);
             this.panel2.TabIndex = 30;
             this.panel2.Visible = false;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(108, 276);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(164, 26);
+            this.textBox5.TabIndex = 4;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(107, 225);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(165, 26);
+            this.textBox4.TabIndex = 3;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(108, 154);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(164, 26);
+            this.textBox3.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(108, 91);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(164, 26);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(108, 27);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(164, 26);
+            this.textBox1.TabIndex = 0;
             // 
             // сотрудникиBindingSource1
             // 
@@ -522,41 +557,6 @@
             this.comboBox3.Size = new System.Drawing.Size(170, 28);
             this.comboBox3.TabIndex = 0;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(120, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(120, 91);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(120, 138);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 26);
-            this.textBox3.TabIndex = 2;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(120, 186);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 26);
-            this.textBox4.TabIndex = 3;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(120, 237);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 26);
-            this.textBox5.TabIndex = 4;
-            // 
             // Сотрудники
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -637,7 +637,7 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.PlaceHolderTextBox placeHolderTextBox7;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button Изменить;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;

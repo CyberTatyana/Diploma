@@ -4096,12 +4096,35 @@ namespace WindowsFormsApplication1.ServiceDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
+            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[3];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Код, Наименование, [Дата приема], [Дата окончания работ], Оборудование, Ре" +
                 "монт, Тип_ремонта, Сотрудник, Цена, Количество, Сумма FROM Заказы";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.OleDb.OleDbCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT Код, Наименование, [Дата приема], [Дата окончания работ], Оборудование, Ре" +
+                "монт, Тип_ремонта, Сотрудник, Цена, Количество, Сумма FROM Заказы\r\nWHERE ([Наиме" +
+                "нование] = ?)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Наименование", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Наименование", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2] = new global::System.Data.OleDb.OleDbCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "INSERT INTO `Заказы` (`Наименование`, `Дата приема`, `Дата окончания работ`, `Обо" +
+                "рудование`, `Ремонт`, `Тип_ремонта`, `Сотрудник`, `Цена`, `Количество`, `Сумма`)" +
+                " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Наименование", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Наименование", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Дата_приема", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата приема", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Дата_окончания_работ", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата окончания работ", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Оборудование", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Оборудование", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Ремонт", global::System.Data.OleDb.OleDbType.WChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Ремонт", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Тип_ремонта", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип_ремонта", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Сотрудник", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Сотрудник", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Цена", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Цена", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Количество", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Сумма", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Сумма", global::System.Data.DataRowVersion.Current, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4123,6 +4146,42 @@ namespace WindowsFormsApplication1.ServiceDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual ServiceDataSet.ЗаказыDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            ServiceDataSet.ЗаказыDataTable dataTable = new ServiceDataSet.ЗаказыDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(ServiceDataSet.ЗаказыDataTable dataTable, string Наименование) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((Наименование == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Наименование));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual ServiceDataSet.ЗаказыDataTable GetDataBy(string Наименование) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((Наименование == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Наименование));
+            }
             ServiceDataSet.ЗаказыDataTable dataTable = new ServiceDataSet.ЗаказыDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -4504,6 +4563,89 @@ namespace WindowsFormsApplication1.ServiceDataSetTableAdapters {
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertQuery(string Наименование, global::System.Nullable<global::System.DateTime> Дата_приема, global::System.Nullable<global::System.DateTime> Дата_окончания_работ, string Оборудование, string Ремонт, string Тип_ремонта, string Сотрудник, global::System.Nullable<int> Цена, global::System.Nullable<int> Количество, global::System.Nullable<int> Сумма) {
+            global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[2];
+            if ((Наименование == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Наименование));
+            }
+            if ((Дата_приема.HasValue == true)) {
+                command.Parameters[1].Value = ((System.DateTime)(Дата_приема.Value));
+            }
+            else {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Дата_окончания_работ.HasValue == true)) {
+                command.Parameters[2].Value = ((System.DateTime)(Дата_окончания_работ.Value));
+            }
+            else {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((Оборудование == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(Оборудование));
+            }
+            if ((Ремонт == null)) {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[4].Value = ((string)(Ремонт));
+            }
+            if ((Тип_ремонта == null)) {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[5].Value = ((string)(Тип_ремонта));
+            }
+            if ((Сотрудник == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(Сотрудник));
+            }
+            if ((Цена.HasValue == true)) {
+                command.Parameters[7].Value = ((int)(Цена.Value));
+            }
+            else {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((Количество.HasValue == true)) {
+                command.Parameters[8].Value = ((int)(Количество.Value));
+            }
+            else {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((Сумма.HasValue == true)) {
+                command.Parameters[9].Value = ((int)(Сумма.Value));
+            }
+            else {
+                command.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
