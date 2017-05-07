@@ -59,29 +59,10 @@ namespace System.Windows.Forms
             }
         }
 
-        private void restoreStyle(object sender, EventArgs e)
-        {
-            
-            if (!string.IsNullOrEmpty(this.Text))
-            {
-                
-                this.Mask = this.savedMask;
-                this.ForeColor = System.Drawing.SystemColors.WindowText;
-                this.Font = new Font(this.Font, FontStyle.Regular);
-                isPlaceHolder = false;
-
-            } else
-            {
-                setPlaceholder();
-            }
-           
-        }
-
         public PlaceHolderTextBox()
         {            
             GotFocus += removePlaceHolder;
-            LostFocus += setPlaceholder;
-            TextChanged += restoreStyle;
+            LostFocus += setPlaceholder;            
         }
 
         private void setPlaceholder(object sender, EventArgs e)
