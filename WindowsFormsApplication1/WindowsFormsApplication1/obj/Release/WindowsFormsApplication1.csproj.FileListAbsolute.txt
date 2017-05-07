@@ -1,0 +1,9 @@
+C:\Users\Alexander\Desktop\Диплом\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe.config
+C:\Users\Alexander\Desktop\Диплом\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+C:\Users\Alexander\Desktop\Диплом\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\Alexander\Desktop\Диплом\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Worker.resources
+C:\Users\Alexander\Desktop\Диплом\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Main.resources
+C:\Users\Alexander\Desktop\Диплом\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Alexander\Desktop\Диплом\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Alexander\Desktop\Диплом\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.exe
+C:\Users\Alexander\Desktop\Диплом\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.pdb
