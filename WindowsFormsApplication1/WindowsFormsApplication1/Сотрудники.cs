@@ -28,11 +28,15 @@ namespace WindowsFormsApplication1
         }
         private void сотрудникиDataGridView_change(object sender, EventArgs e)
         {
-            placeHolderTextBox1.Text = сотрудникиDataGridView.CurrentRow.Cells[0].Value.ToString();
-            placeHolderTextBox2.Text = сотрудникиDataGridView.CurrentRow.Cells[1].Value.ToString();
-            placeHolderTextBox3.Text = сотрудникиDataGridView.CurrentRow.Cells[2].Value.ToString();
-            placeHolderTextBox4.Text = сотрудникиDataGridView.CurrentRow.Cells[3].Value.ToString();
-            placeHolderTextBox5.Text = сотрудникиDataGridView.CurrentRow.Cells[4].Value.ToString();
+            
+                if (сотрудникиDataGridView.CurrentRow != null)
+            {
+                textBox1.Text = сотрудникиDataGridView.CurrentRow.Cells[0].Value.ToString();
+                textBox2.Text = сотрудникиDataGridView.CurrentRow.Cells[1].Value.ToString();
+                textBox3.Text = сотрудникиDataGridView.CurrentRow.Cells[2].Value.ToString();
+                textBox4.Text = сотрудникиDataGridView.CurrentRow.Cells[3].Value.ToString();
+                textBox5.Text = сотрудникиDataGridView.CurrentRow.Cells[4].Value.ToString();
+            }
         }
 
         private void Worker_Load(object sender, EventArgs e)
@@ -115,16 +119,6 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void button2_Click_2(object sender, EventArgs e)
-        {
-            if (placeHolderTextBox3.Text != "")
-            {
-                сотрудникиTableAdapter.UpdateQuery(textBox5.Text,comboBox2.Text);
-            }
-            сотрудникиTableAdapter.Update(serviceDataSet.Сотрудники);
-            сотрудникиTableAdapter.Fill(serviceDataSet.Сотрудники);
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             panel2.Visible = true;
@@ -154,7 +148,7 @@ namespace WindowsFormsApplication1
         private void button10_Click(object sender, EventArgs e)
         {
             String NameField = " ";
-            switch (comboBox2.SelectedIndex)
+            switch (comboBox1.SelectedIndex)
             {
                 case 0:
                     NameField = "Должность";
@@ -178,7 +172,7 @@ namespace WindowsFormsApplication1
         private void button13_Click(object sender, EventArgs e)
         {
             String NameField = " ";
-            switch (comboBox2.SelectedIndex)
+            switch (comboBox3.SelectedIndex)
             {
                 case 0:
                     NameField = "ФИО";
@@ -205,7 +199,7 @@ namespace WindowsFormsApplication1
             DataGridViewRow row = сотрудникиDataGridView.CurrentRow; 
             string value = row.Cells[0].Value.ToString() ?? string.Empty;
             MessageBox.Show(value);
-            сотрудникиTableAdapter.UpdateQuery1(placeHolderTextBox1.Text, placeHolderTextBox2.Text, placeHolderTextBox3.Text, placeHolderTextBox4.Text, placeHolderTextBox5.Text, value);
+            сотрудникиTableAdapter.UpdateQuery1(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, value);
             сотрудникиTableAdapter.Update(serviceDataSet.Сотрудники);
             сотрудникиTableAdapter.Fill(serviceDataSet.Сотрудники);
         }
