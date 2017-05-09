@@ -95,6 +95,7 @@
             this.button4.TabIndex = 13;
             this.button4.Text = "Отчеты";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -142,12 +143,13 @@
             this.button10.TabIndex = 19;
             this.button10.Text = "Запросы";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // Главное_меню
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(415, 260);
+            this.ClientSize = new System.Drawing.Size(431, 260);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button7);

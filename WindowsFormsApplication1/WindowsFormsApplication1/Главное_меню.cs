@@ -56,6 +56,20 @@ namespace WindowsFormsApplication1
         {
           Заказы frm = new Заказы(); frm.Show();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+
+            f3.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form5 f5 = new Form5();
+
+            f5.Show();
+        }
     }
     }
 

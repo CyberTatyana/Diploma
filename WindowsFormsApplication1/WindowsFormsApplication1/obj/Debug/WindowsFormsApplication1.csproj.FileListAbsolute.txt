@@ -82,8 +82,6 @@ C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplicatio
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
-C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
-C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form2.resources
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Заказы.resources
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Клиенты.resources
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Оборудование.resources
@@ -95,3 +93,7 @@ C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplicatio
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form3.resources
+C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form4.resources
+C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form5.resources
+C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form6.resources
