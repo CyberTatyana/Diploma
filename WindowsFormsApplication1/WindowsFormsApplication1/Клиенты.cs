@@ -15,6 +15,29 @@ namespace WindowsFormsApplication1
         public Клиенты()
         {
             InitializeComponent();
+            клиентыDataGridView.SelectionChanged += new EventHandler(
+                this.клиентыDataGridView_change);
+        }
+
+        private void клиентыDataGridView_change(object sender, EventArgs e)
+        {
+            if (клиентыDataGridView.CurrentRow != null)
+            {
+                textBox1.Text = клиентыDataGridView.CurrentRow.Cells[0].Value.ToString();
+                textBox2.Text = клиентыDataGridView.CurrentRow.Cells[1].Value.ToString();
+                textBox3.Text = клиентыDataGridView.CurrentRow.Cells[2].Value.ToString();
+                textBox4.Text = клиентыDataGridView.CurrentRow.Cells[3].Value.ToString();
+                textBox5.Text = клиентыDataGridView.CurrentRow.Cells[4].Value.ToString();
+                if (!string.IsNullOrEmpty((клиентыDataGridView.CurrentRow.Cells[5].Value.ToString())))
+                {
+                    checkBox2.Checked = (bool)клиентыDataGridView.CurrentRow.Cells[5].Value;
+                } else
+                {
+                    checkBox2.Checked = false;
+                }
+                }
+            
+
         }
 
         private void клиентыBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -62,7 +85,8 @@ namespace WindowsFormsApplication1
         {
             клиентыTableAdapter.InsertQuery(placeHolderTextBox2.Text, placeHolderTextBox3.Text, placeHolderTextBox4.Text, placeHolderTextBox5.Text, placeHolderTextBox6.Text, checkBox1.Checked);
             клиентыTableAdapter.Update(serviceDataSet.Клиенты);
-           клиентыTableAdapter.Fill(serviceDataSet.Клиенты);
+            клиентыTableAdapter.Fill(serviceDataSet.Клиенты);
+            placeHolderTextBox6.Text = "";
         }
 
         private void button6_Click(object sender, EventArgs e)
