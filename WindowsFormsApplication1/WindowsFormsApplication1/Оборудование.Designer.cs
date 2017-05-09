@@ -53,11 +53,11 @@
             this.button7 = new System.Windows.Forms.Button();
             this.тип_оборудованияTableAdapter = new WindowsFormsApplication1.ServiceDataSetTableAdapters.Тип_оборудованияTableAdapter();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.placeHolderTextBox2 = new System.Windows.Forms.PlaceHolderTextBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.serviceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.оборудованиеBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.оборудованиеDataGridView)).BeginInit();
@@ -278,46 +278,6 @@
             this.panel2.TabIndex = 9;
             this.panel2.Visible = false;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(126, 23);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(92, 27);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Фильтрация";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Тип_оборудования"});
-            this.comboBox2.Location = new System.Drawing.Point(4, 4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 0;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(4, 32);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(121, 23);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Фильтр";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(132, 32);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(88, 23);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "Сброс";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
             // placeHolderTextBox2
             // 
             this.placeHolderTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
@@ -329,11 +289,51 @@
             this.placeHolderTextBox2.TabIndex = 4;
             this.placeHolderTextBox2.Text = "Введите фильтр";
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(132, 32);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(88, 23);
+            this.button9.TabIndex = 3;
+            this.button9.Text = "Сброс";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(4, 32);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(121, 23);
+            this.button8.TabIndex = 2;
+            this.button8.Text = "Фильтр";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Тип_оборудования"});
+            this.comboBox2.Location = new System.Drawing.Point(4, 4);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 0;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(126, 23);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(92, 27);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Фильтрация";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // Оборудование
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 321);
+            this.ClientSize = new System.Drawing.Size(456, 316);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button7);

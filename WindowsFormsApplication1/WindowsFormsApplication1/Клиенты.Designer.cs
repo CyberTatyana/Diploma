@@ -50,31 +50,32 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.placeHolderTextBox3 = new System.Windows.Forms.PlaceHolderTextBox();
+            this.placeHolderTextBox5 = new System.Windows.Forms.PlaceHolderTextBox();
+            this.placeHolderTextBox4 = new System.Windows.Forms.PlaceHolderTextBox();
+            this.placeHolderTextBox2 = new System.Windows.Forms.PlaceHolderTextBox();
+            this.placeHolderTextBox6 = new System.Windows.Forms.PlaceHolderTextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button6 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.placeHolderTextBox3 = new System.Windows.Forms.PlaceHolderTextBox();
-            this.placeHolderTextBox5 = new System.Windows.Forms.PlaceHolderTextBox();
-            this.placeHolderTextBox4 = new System.Windows.Forms.PlaceHolderTextBox();
-            this.placeHolderTextBox2 = new System.Windows.Forms.PlaceHolderTextBox();
-            this.placeHolderTextBox6 = new System.Windows.Forms.PlaceHolderTextBox();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.serviceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентыDataGridView)).BeginInit();
@@ -266,6 +267,74 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(267, 272);
             this.panel1.TabIndex = 18;
+            this.panel1.Visible = false;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(192, 246);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(72, 23);
+            this.button7.TabIndex = 18;
+            this.button7.Text = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // placeHolderTextBox3
+            // 
+            this.placeHolderTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
+            this.placeHolderTextBox3.ForeColor = System.Drawing.Color.Gray;
+            this.placeHolderTextBox3.Location = new System.Drawing.Point(97, 43);
+            this.placeHolderTextBox3.Name = "placeHolderTextBox3";
+            this.placeHolderTextBox3.PlaceHolderText = "Введите город";
+            this.placeHolderTextBox3.Size = new System.Drawing.Size(132, 20);
+            this.placeHolderTextBox3.TabIndex = 7;
+            this.placeHolderTextBox3.Text = "Введите город";
+            // 
+            // placeHolderTextBox5
+            // 
+            this.placeHolderTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
+            this.placeHolderTextBox5.ForeColor = System.Drawing.Color.Gray;
+            this.placeHolderTextBox5.Location = new System.Drawing.Point(97, 124);
+            this.placeHolderTextBox5.Name = "placeHolderTextBox5";
+            this.placeHolderTextBox5.PlaceHolderText = "Введите адрес";
+            this.placeHolderTextBox5.Size = new System.Drawing.Size(132, 20);
+            this.placeHolderTextBox5.TabIndex = 9;
+            this.placeHolderTextBox5.Text = "Введите адрес";
+            // 
+            // placeHolderTextBox4
+            // 
+            this.placeHolderTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
+            this.placeHolderTextBox4.ForeColor = System.Drawing.Color.Gray;
+            this.placeHolderTextBox4.Location = new System.Drawing.Point(97, 83);
+            this.placeHolderTextBox4.Name = "placeHolderTextBox4";
+            this.placeHolderTextBox4.PlaceHolderText = "Введите телефон";
+            this.placeHolderTextBox4.Size = new System.Drawing.Size(132, 20);
+            this.placeHolderTextBox4.TabIndex = 8;
+            this.placeHolderTextBox4.Text = "Введите телефон";
+            this.placeHolderTextBox4.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.placeHolderTextBox4_MaskInputRejected);
+            // 
+            // placeHolderTextBox2
+            // 
+            this.placeHolderTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
+            this.placeHolderTextBox2.ForeColor = System.Drawing.Color.Gray;
+            this.placeHolderTextBox2.Location = new System.Drawing.Point(97, 8);
+            this.placeHolderTextBox2.Name = "placeHolderTextBox2";
+            this.placeHolderTextBox2.PlaceHolderText = "Введите наименование";
+            this.placeHolderTextBox2.Size = new System.Drawing.Size(132, 20);
+            this.placeHolderTextBox2.TabIndex = 6;
+            this.placeHolderTextBox2.Text = "Введите наименование";
+            // 
+            // placeHolderTextBox6
+            // 
+            this.placeHolderTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
+            this.placeHolderTextBox6.ForeColor = System.Drawing.Color.Gray;
+            this.placeHolderTextBox6.Location = new System.Drawing.Point(97, 194);
+            this.placeHolderTextBox6.Name = "placeHolderTextBox6";
+            this.placeHolderTextBox6.PlaceHolderText = "Введите ИНН";
+            this.placeHolderTextBox6.Size = new System.Drawing.Size(132, 20);
+            this.placeHolderTextBox6.TabIndex = 14;
+            this.placeHolderTextBox6.Text = "Введите ИНН";
+            this.placeHolderTextBox6.Visible = false;
+            this.placeHolderTextBox6.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.placeHolderTextBox6_MaskInputRejected);
             // 
             // button3
             // 
@@ -275,6 +344,7 @@
             this.button3.TabIndex = 19;
             this.button3.Text = "Добавить";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -284,10 +354,11 @@
             this.button4.TabIndex = 20;
             this.button4.Text = "Изменить";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(329, 308);
+            this.button5.Location = new System.Drawing.Point(311, 308);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(113, 23);
             this.button5.TabIndex = 21;
@@ -333,6 +404,61 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(283, 274);
             this.panel2.TabIndex = 24;
+            this.panel2.Visible = false;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(208, 251);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(72, 20);
+            this.button8.TabIndex = 30;
+            this.button8.Text = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(3, 232);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(192, 23);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Изменить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(124, 203);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(129, 20);
+            this.textBox5.TabIndex = 28;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(124, 133);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(129, 20);
+            this.textBox4.TabIndex = 27;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(124, 96);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(129, 20);
+            this.textBox3.TabIndex = 26;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(124, 56);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(129, 20);
+            this.textBox2.TabIndex = 25;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(124, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(129, 20);
+            this.textBox1.TabIndex = 24;
             // 
             // checkBox2
             // 
@@ -390,132 +516,22 @@
             this.label12.TabIndex = 21;
             this.label12.Text = "Адрес";
             // 
-            // textBox1
+            // button9
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(129, 20);
-            this.textBox1.TabIndex = 24;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(124, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(129, 20);
-            this.textBox2.TabIndex = 25;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(124, 96);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(129, 20);
-            this.textBox3.TabIndex = 26;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(124, 133);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(129, 20);
-            this.textBox4.TabIndex = 27;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(124, 203);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(129, 20);
-            this.textBox5.TabIndex = 28;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 232);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(192, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Изменить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(192, 246);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(72, 23);
-            this.button7.TabIndex = 18;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(208, 251);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(72, 20);
-            this.button8.TabIndex = 30;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // placeHolderTextBox3
-            // 
-            this.placeHolderTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
-            this.placeHolderTextBox3.ForeColor = System.Drawing.Color.Gray;
-            this.placeHolderTextBox3.Location = new System.Drawing.Point(97, 43);
-            this.placeHolderTextBox3.Name = "placeHolderTextBox3";
-            this.placeHolderTextBox3.PlaceHolderText = "Введите город";
-            this.placeHolderTextBox3.Size = new System.Drawing.Size(132, 20);
-            this.placeHolderTextBox3.TabIndex = 7;
-            this.placeHolderTextBox3.Text = "Введите город";
-            // 
-            // placeHolderTextBox5
-            // 
-            this.placeHolderTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
-            this.placeHolderTextBox5.ForeColor = System.Drawing.Color.Gray;
-            this.placeHolderTextBox5.Location = new System.Drawing.Point(97, 124);
-            this.placeHolderTextBox5.Name = "placeHolderTextBox5";
-            this.placeHolderTextBox5.PlaceHolderText = "Введите адрес";
-            this.placeHolderTextBox5.Size = new System.Drawing.Size(132, 20);
-            this.placeHolderTextBox5.TabIndex = 9;
-            this.placeHolderTextBox5.Text = "Введите адрес";
-            // 
-            // placeHolderTextBox4
-            // 
-            this.placeHolderTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
-            this.placeHolderTextBox4.ForeColor = System.Drawing.Color.Gray;
-            this.placeHolderTextBox4.Location = new System.Drawing.Point(97, 83);
-            this.placeHolderTextBox4.Mask = "(999) 000-0000";
-            this.placeHolderTextBox4.Name = "placeHolderTextBox4";
-            this.placeHolderTextBox4.PlaceHolderText = "Введите телефон";
-            this.placeHolderTextBox4.Size = new System.Drawing.Size(132, 20);
-            this.placeHolderTextBox4.TabIndex = 8;
-            this.placeHolderTextBox4.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.placeHolderTextBox4_MaskInputRejected);
-            // 
-            // placeHolderTextBox2
-            // 
-            this.placeHolderTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
-            this.placeHolderTextBox2.ForeColor = System.Drawing.Color.Gray;
-            this.placeHolderTextBox2.Location = new System.Drawing.Point(97, 8);
-            this.placeHolderTextBox2.Name = "placeHolderTextBox2";
-            this.placeHolderTextBox2.PlaceHolderText = "Введите наименование";
-            this.placeHolderTextBox2.Size = new System.Drawing.Size(132, 20);
-            this.placeHolderTextBox2.TabIndex = 6;
-            this.placeHolderTextBox2.Text = "Введите наименование";
-            // 
-            // placeHolderTextBox6
-            // 
-            this.placeHolderTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
-            this.placeHolderTextBox6.ForeColor = System.Drawing.Color.Gray;
-            this.placeHolderTextBox6.Location = new System.Drawing.Point(97, 194);
-            this.placeHolderTextBox6.Mask = "0000000000000";
-            this.placeHolderTextBox6.Name = "placeHolderTextBox6";
-            this.placeHolderTextBox6.PlaceHolderText = "Введите ИНН";
-            this.placeHolderTextBox6.Size = new System.Drawing.Size(132, 20);
-            this.placeHolderTextBox6.TabIndex = 14;
-            this.placeHolderTextBox6.Visible = false;
-            this.placeHolderTextBox6.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.placeHolderTextBox6_MaskInputRejected);
+            this.button9.Location = new System.Drawing.Point(472, 308);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(113, 23);
+            this.button9.TabIndex = 25;
+            this.button9.Text = "Сохранить";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Клиенты
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(656, 648);
+            this.ClientSize = new System.Drawing.Size(656, 341);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.button6);
@@ -589,5 +605,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button9;
     }
 }

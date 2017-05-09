@@ -34,7 +34,6 @@
             this.ремонтTableAdapter = new WindowsFormsApplication1.ServiceDataSetTableAdapters.РемонтTableAdapter();
             this.tableAdapterManager = new WindowsFormsApplication1.ServiceDataSetTableAdapters.TableAdapterManager();
             this.ремонтDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.placeHolderTextBox1 = new System.Windows.Forms.PlaceHolderTextBox();
@@ -43,6 +42,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.serviceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ремонтBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ремонтDataGridView)).BeginInit();
@@ -86,12 +86,6 @@
             this.ремонтDataGridView.Name = "ремонтDataGridView";
             this.ремонтDataGridView.Size = new System.Drawing.Size(239, 130);
             this.ремонтDataGridView.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Название";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Название";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // button1
             // 
@@ -174,6 +168,13 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Название";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Название";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 170;
+            // 
             // Ремонт
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,7 +204,6 @@
         private ServiceDataSetTableAdapters.РемонтTableAdapter ремонтTableAdapter;
         private ServiceDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView ремонтDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PlaceHolderTextBox placeHolderTextBox1;
@@ -212,5 +212,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
     }
 }

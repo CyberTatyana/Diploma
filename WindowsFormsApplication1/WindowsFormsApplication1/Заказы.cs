@@ -67,6 +67,39 @@ namespace WindowsFormsApplication1
             заказыTableAdapter.FillBy(serviceDataSet.Заказы, name);
         }
 
+        
+
+       
+
+       
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.заказыBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.serviceDataSet);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+            Заказы frm = new Заказы ();
+            this.Size = new Size(976, 679);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Оборудование frm = new Оборудование(); frm.Show();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            int pr;
+            if (textBox2.Text == "") textBox2.Text = "0";
+            pr = Convert.ToInt32(textBox2.Text) * Convert.ToInt32(textBox1.Text);
+            textBox3.Text = Convert.ToString(pr);
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
             int a, b, c;
@@ -79,15 +112,32 @@ namespace WindowsFormsApplication1
                 заказыTableAdapter.Update(serviceDataSet.Заказы);
                 string name = comboBox1.Text;
                 заказыTableAdapter.FillBy(serviceDataSet.Заказы, name);
-            } else
+            }
+            else
             {
-                MessageBox.Show("Заполните все поля", "Ощибка");
+                MessageBox.Show("Заполните все поля", "Ошибка");
             }            
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            Оборудование frm = new Оборудование(); frm.Show();
+
         }
+
+        
+
+        
+
+        
+
+        
+
+        
+
+       
+
+        
+
+        
     }
 }
