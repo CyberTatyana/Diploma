@@ -7,10 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
+using Microsoft.Office.Interop.Access;
+// using Excel = Microsoft.Office.Interop.Excel;
+// using Word = Microsoft.Office.Interop.Word;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Клиенты : Form
+    public partial class Клиенты : System.Windows.Forms.Form
     {
         public Клиенты()
         {
@@ -131,6 +135,23 @@ namespace WindowsFormsApplication1
             this.Size = new Size(672, 689);
         }
 
-       
+
+
+        private static void ExportQuery(string databaseLocation, string queryNameToExport, string locationToExportTo)
+        {
+            var application = new Microsoft.Office.Interop.Access.Application();
+            application.OpenCurrentDatabase(databaseLocation);
+            application.DoCmd.TransferSpreadsheet(AcDataTransferType.acExport, AcSpreadSheetType.acSpreadsheetTypeExcel12,
+                                                  queryNameToExport, locationToExportTo, true);
+            application.CloseCurrentDatabase();
+            application.Quit();
+            Marshal.ReleaseComObject(application);
+        }
+    
+        private void button10_Click(object sender, EventArgs e)
+        {
+          
+            ExportQuery("\blah\blah.accdb", "myQuery", @"C:\blah\blah.xlsx");
+        }
     }
 }
