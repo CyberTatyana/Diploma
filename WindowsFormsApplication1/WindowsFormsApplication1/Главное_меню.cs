@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1
 
         private void button3_Click(object sender, EventArgs e)
         {
-          Сотрудники frm = new Сотрудники(); frm.Show();
+            Сотрудники frm = new Сотрудники(); frm.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -66,9 +66,7 @@ namespace WindowsFormsApplication1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form5 f5 = new Form5();
-
-            f5.Show();
+            
         }
     }
     }

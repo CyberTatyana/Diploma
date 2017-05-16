@@ -93,9 +93,11 @@ C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplicatio
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form3.resources
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form4.resources
-C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form5.resources
 C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form6.resources
 C:\Users\Alexander\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form3.resources
 C:\Users\Alexander\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form4.resources
 C:\Users\Alexander\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form5.resources
 C:\Users\Alexander\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form6.resources
+C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Отчет_по_оборудованию.resources
+C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Отчет_по_типу_оборудования.resources
+C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Запрос_по_клиентам3cs.resources

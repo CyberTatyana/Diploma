@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Form6
+    partial class Отчет_по_оборудованию
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.заказыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.serviceDataSet = new WindowsFormsApplication1.ServiceDataSet();
+            this.заказыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.заказыTableAdapter = new WindowsFormsApplication1.ServiceDataSetTableAdapters.ЗаказыTableAdapter();
             this.tableAdapterManager = new WindowsFormsApplication1.ServiceDataSetTableAdapters.TableAdapterManager();
-            this.сотрудникиTableAdapter = new WindowsFormsApplication1.ServiceDataSetTableAdapters.СотрудникиTableAdapter();
             this.заказыDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,23 +46,24 @@
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.сотрудникиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).BeginInit();
+            this.оборудованиеBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.оборудованиеTableAdapter = new WindowsFormsApplication1.ServiceDataSetTableAdapters.ОборудованиеTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.serviceDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказыDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.оборудованиеBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // заказыBindingSource
-            // 
-            this.заказыBindingSource.DataMember = "Заказы";
-            this.заказыBindingSource.DataSource = this.serviceDataSet;
             // 
             // serviceDataSet
             // 
             this.serviceDataSet.DataSetName = "ServiceDataSet";
             this.serviceDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // заказыBindingSource
+            // 
+            this.заказыBindingSource.DataMember = "Заказы";
+            this.заказыBindingSource.DataSource = this.serviceDataSet;
             // 
             // заказыTableAdapter
             // 
@@ -75,15 +75,11 @@
             this.tableAdapterManager.UpdateOrder = WindowsFormsApplication1.ServiceDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.ЗаказыTableAdapter = this.заказыTableAdapter;
             this.tableAdapterManager.КлиентыTableAdapter = null;
-            this.tableAdapterManager.ОборудованиеTableAdapter = null;
+            this.tableAdapterManager.ОборудованиеTableAdapter = this.оборудованиеTableAdapter;
             this.tableAdapterManager.Ремонт_оборудованияTableAdapter = null;
             this.tableAdapterManager.РемонтTableAdapter = null;
-            this.tableAdapterManager.СотрудникиTableAdapter = this.сотрудникиTableAdapter;
+            this.tableAdapterManager.СотрудникиTableAdapter = null;
             this.tableAdapterManager.Тип_оборудованияTableAdapter = null;
-            // 
-            // сотрудникиTableAdapter
-            // 
-            this.сотрудникиTableAdapter.ClearBeforeFill = true;
             // 
             // заказыDataGridView
             // 
@@ -102,10 +98,10 @@
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11});
             this.заказыDataGridView.DataSource = this.заказыBindingSource;
-            this.заказыDataGridView.Location = new System.Drawing.Point(1, 96);
+            this.заказыDataGridView.Location = new System.Drawing.Point(12, 112);
             this.заказыDataGridView.Name = "заказыDataGridView";
             this.заказыDataGridView.Size = new System.Drawing.Size(890, 220);
-            this.заказыDataGridView.TabIndex = 2;
+            this.заказыDataGridView.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -181,45 +177,49 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.DataSource = this.сотрудникиBindingSource;
-            this.comboBox1.DisplayMember = "ФИО";
+            this.comboBox1.DataSource = this.оборудованиеBindingSource;
+            this.comboBox1.DisplayMember = "Название_оборудования";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(34, 24);
+            this.comboBox1.Location = new System.Drawing.Point(31, 21);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.ValueMember = "ФИО";
-            // 
-            // сотрудникиBindingSource
-            // 
-            this.сотрудникиBindingSource.DataMember = "Сотрудники";
-            this.сотрудникиBindingSource.DataSource = this.serviceDataSet;
+            this.comboBox1.TabIndex = 4;
+            this.comboBox1.ValueMember = "Название_оборудования";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(34, 52);
+            this.button1.Location = new System.Drawing.Point(31, 48);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 38);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Отобразить заказы сотрудника";
+            this.button1.Size = new System.Drawing.Size(121, 50);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Отобразить заказы определенного оборудования";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form6
+            // оборудованиеBindingSource
+            // 
+            this.оборудованиеBindingSource.DataMember = "Оборудование";
+            this.оборудованиеBindingSource.DataSource = this.serviceDataSet;
+            // 
+            // оборудованиеTableAdapter
+            // 
+            this.оборудованиеTableAdapter.ClearBeforeFill = true;
+            // 
+            // Отчет_по_сотрудникам
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 331);
+            this.ClientSize = new System.Drawing.Size(926, 364);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.заказыDataGridView);
-            this.Name = "Form6";
-            this.Text = "Отчет по сотрудникам";
-            this.Load += new System.EventHandler(this.Form6_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).EndInit();
+            this.Name = "Отчет_по_сотрудникам";
+            this.Text = "Отчет_по_оборудованию";
+            this.Load += new System.EventHandler(this.Отчет_по_сотрудникам_Load);
             ((System.ComponentModel.ISupportInitialize)(this.serviceDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказыDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.оборудованиеBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -242,9 +242,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private ServiceDataSetTableAdapters.СотрудникиTableAdapter сотрудникиTableAdapter;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.BindingSource сотрудникиBindingSource;
         private System.Windows.Forms.Button button1;
+        private ServiceDataSetTableAdapters.ОборудованиеTableAdapter оборудованиеTableAdapter;
+        private System.Windows.Forms.BindingSource оборудованиеBindingSource;
     }
 }

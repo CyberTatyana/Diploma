@@ -60,12 +60,6 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form6.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +75,12 @@
     </Compile>
     <Compile Include="Заказы.Designer.cs">
       <DependentUpon>Заказы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Запрос_по_клиентам3cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Запрос_по_клиентам3cs.Designer.cs">
+      <DependentUpon>Запрос_по_клиентам3cs.cs</DependentUpon>
     </Compile>
     <Compile Include="Клиенты.cs">
       <SubType>Form</SubType>
@@ -99,6 +99,18 @@
     </Compile>
     <Compile Include="Оборудование.Designer.cs">
       <DependentUpon>Оборудование.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_по_оборудованию.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_по_оборудованию.Designer.cs">
+      <DependentUpon>Отчет_по_оборудованию.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_по_типу_оборудования.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_по_типу_оборудования.Designer.cs">
+      <DependentUpon>Отчет_по_типу_оборудования.cs</DependentUpon>
     </Compile>
     <Compile Include="Ремонт_оборудования.cs">
       <SubType>Form</SubType>
@@ -137,20 +149,26 @@
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form6.resx">
       <DependentUpon>Form6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Заказы.resx">
       <DependentUpon>Заказы.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Запрос_по_клиентам3cs.resx">
+      <DependentUpon>Запрос_по_клиентам3cs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Клиенты.resx">
       <DependentUpon>Клиенты.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Оборудование.resx">
       <DependentUpon>Оборудование.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_по_оборудованию.resx">
+      <DependentUpon>Отчет_по_оборудованию.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_по_типу_оборудования.resx">
+      <DependentUpon>Отчет_по_типу_оборудования.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ремонт_оборудования.resx">
       <DependentUpon>Ремонт_оборудования.cs</DependentUpon>
