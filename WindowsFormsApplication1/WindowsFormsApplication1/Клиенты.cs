@@ -150,8 +150,8 @@ namespace WindowsFormsApplication1
     
         private void button10_Click(object sender, EventArgs e)
         {
-          
-            ExportQuery("\blah\blah.accdb", "myQuery", @"C:\blah\blah.xlsx");
+
+            ExportQuery(@"C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\Service.accdb", "Клиенты", @"C:\к\blah.xlsx");
         }
     }
 }
