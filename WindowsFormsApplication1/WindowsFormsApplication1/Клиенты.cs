@@ -151,8 +151,8 @@ namespace WindowsFormsApplication1
         private static void ExportQuery(string databaseLocation, string queryNameToExport, string locationToExportTo)
         {
             var application = new Microsoft.Office.Interop.Access.Application();
-            application.OpenCurrentDatabase(databaseLocation);
-            application.DoCmd.TransferSpreadsheet(AcDataTransferType.acExport, AcSpreadSheetType.acSpreadsheetTypeExcel12,
+            application.OpenCurrentDatabase(databaseLocation); 
+            application.DoCmd.TransferSpreadsheet(AcDataTransferType.acExport, AcSpreadSheetType.acSpreadsheetTypeExcel9,
                                                   queryNameToExport, locationToExportTo, true);
             application.CloseCurrentDatabase();
             application.Quit();
@@ -162,7 +162,7 @@ namespace WindowsFormsApplication1
         private void button10_Click(object sender, EventArgs e)
         {
 
-            ExportQuery(@"C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\Service.accdb", "Клиенты", @"C:\к\blah.xlsx");
+            ExportQuery(@"C:\Users\Admin\Desktop\diplomarc\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Service.accdb", "Клиенты", @"C:\к\blah.xls");
         }
     }
 }
