@@ -95,7 +95,18 @@ namespace WindowsFormsApplication1
 
         private void button6_Click(object sender, EventArgs e)
         {
+            клиентыTableAdapter.FillBy1(serviceDataSet.Клиенты, placeHolderTextBox1.Text);
 
+
+            if (клиентыDataGridView.Rows[0].Cells[0].Value == null)
+            {
+                MessageBox.Show("Клиент не зарегистрирован в базе");
+
+            }
+            else
+            {
+                MessageBox.Show("Клиент  зарегистрирован в базе");
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
